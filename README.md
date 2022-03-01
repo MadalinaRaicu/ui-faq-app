@@ -1,6 +1,6 @@
-# UiFaqApp
+# UI FAQ App
 
-This project is implemented using [Angular](https://github.com/angular/angular-cli) version 13.2.5.
+This project is implemented using [Angular](https://github.com/angular/angular-cli) version 13.2.5 and uses Cypress for e2e testing.
 
 ## 1. Install dependencies
 
