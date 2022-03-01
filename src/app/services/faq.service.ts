@@ -6,7 +6,7 @@ import { FAQ } from '../model/faq';
 @Injectable({
   providedIn: 'root',
 })
-export class FaqService {
+export class FAQService {
   constructor(private http: HttpClient) {}
 
   getFAQ(): Observable<FAQ[]> {
