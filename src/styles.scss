@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Oswald-regular";
+    src: local("Oswald-regular"), url(./assets/fonts/oswald-regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald-bold";
+    src: local("Oswald-bold"), url(./assets/fonts/oswald-bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald-light";
+    src: local("Oswald-light"), url(./assets/fonts/oswald-light.ttf) format("truetype");
+}

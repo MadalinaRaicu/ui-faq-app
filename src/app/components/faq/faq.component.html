@@ -1,0 +1,23 @@
+<div class="faq-container">
+    <h1 class="title">HAVE A QUESTION? WE CAN HELP</h1>
+    <div class="bar"></div>
+    <ng-container *ngFor="let faq of faq$ | async">
+        <button class="accordion" [ngClass]="{'active': classActive === faq.id}" (click)="toggle(faq)">
+            <span class="accordion-title">
+                <span class="question">Q{{ faq.id }}</span>
+                {{ faq.question }}
+            </span>
+            
+            <span class="accordion-toggle">
+                <svg class="svg-toggle__icon" [ngClass]="{'btn-active': classActive === faq.id}"  width="20px" height="20px" viewBox="0 0 357 357">
+                    <g id="add">
+                        <path d="M357,204H204v153h-51V204H0v-51h153V0h51v153h153V204z"/>
+                    </g>
+                </svg>
+            </span>
+        </button>
+        <div class="panel" [style.display]="classActive === faq.id ? 'block' : 'none'">
+            <p>{{ faq.answer }}</p>
+        </div>
+    </ng-container>
+</div>

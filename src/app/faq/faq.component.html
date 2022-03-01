@@ -1,6 +1,0 @@
-<ng-container *ngFor="let faq of faqs">
-    <button class="accordion" [ngClass]="{'active': classActive === faq.id}" (click)="toggle(faq)">{{ faq.question }}</button>
-    <div class="panel" [style.display]="classActive === faq.id ? 'block' : 'none'">
-        <p>{{faq.question}}</p>
-    </div>
-</ng-container>
